@@ -1,0 +1,8 @@
+{
+    "openai_key": "",
+    "modules": [
+        "splash_screen",
+        "login",
+        "dashboard_mahasiswa"
+    ]
+}
