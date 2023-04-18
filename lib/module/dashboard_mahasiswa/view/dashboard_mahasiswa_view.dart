@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:absensi_sifors/core.dart';
-import '../controller/dashboard_mahasiswa_controller.dart';
+//import '../controller/dashboard_mahasiswa_controller.dart';
 
 class DashboardMahasiswaView extends StatefulWidget {
   const DashboardMahasiswaView({Key? key}) : super(key: key);
 
   Widget build(context, DashboardMahasiswaController controller) {
     controller.view = this;
-
-    String nama = "Putu";
-    String email = "adi.bawa@undiksha.ac.id";
 
     return Scaffold(
       appBar: AppBar(
@@ -23,8 +20,8 @@ class DashboardMahasiswaView extends StatefulWidget {
               accountName: Text("Putu Adi Bawa"),
               accountEmail: Text("adi.bawa@undiksha.ac.id"),
               currentAccountPicture: CircleAvatar(
-                backgroundImage: NetworkImage(
-                    "https://images.unsplash.com/photo-1600486913747-55e5470d6f40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"),
+                backgroundImage:
+                    NetworkImage("https://i.ibb.co/PGv8ZzG/me.jpg"),
               ),
               decoration: BoxDecoration(
                 color: Colors.blue,
@@ -48,6 +45,11 @@ class DashboardMahasiswaView extends StatefulWidget {
               onTap: () {},
             ),
             ListTile(
+              leading: const Icon(Icons.person),
+              title: const Text("Profile"),
+              onTap: () {},
+            ),
+            ListTile(
               leading: const Icon(Icons.logout),
               title: const Text("Sign Out"),
               onTap: () {
@@ -64,7 +66,7 @@ class DashboardMahasiswaView extends StatefulWidget {
       ),
       body: SingleChildScrollView(
         child: Container(
-          padding: const EdgeInsets.all(0),
+          padding: const EdgeInsets.all(10),
           child: Column(
             children: [
               const SizedBox(
@@ -83,18 +85,146 @@ class DashboardMahasiswaView extends StatefulWidget {
                   ),
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                    children: const [
                       Text(
-                        "Hi, $nama",
-                        style: const TextStyle(
+                        "Hi, Putu",
+                        style: TextStyle(
                           fontSize: 30.0,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
-                      Text("$email"),
+                      Text("adi.bawa@undiksha.ac.id"),
                     ],
                   ),
                 ],
+              ),
+              const SizedBox(
+                height: 20.0,
+              ),
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  padding: const EdgeInsets.all(0),
+                  height: 80.0,
+                  width: 350.0,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color(0x19000000),
+                        blurRadius: 24,
+                        offset: Offset(0, 15),
+                      ),
+                    ],
+                  ),
+                  child: const Center(
+                    child: Text(
+                      "MENDAFTAR KEGIATAN",
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 20.0,
+              ),
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  padding: const EdgeInsets.all(0),
+                  height: 80.0,
+                  width: 350.0,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color(0x19000000),
+                        blurRadius: 24,
+                        offset: Offset(0, 15),
+                      ),
+                    ],
+                  ),
+                  child: const Center(
+                    child: Text(
+                      "PRESENSI",
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 20.0,
+              ),
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  padding: const EdgeInsets.all(0),
+                  height: 80.0,
+                  width: 350.0,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color(0x19000000),
+                        blurRadius: 24,
+                        offset: Offset(0, 15),
+                      ),
+                    ],
+                  ),
+                  child: const Center(
+                    child: Text(
+                      "LAPORAN KEHADIRAN",
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: 20.0,
+              ),
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  padding: const EdgeInsets.all(0),
+                  height: 80.0,
+                  width: 350.0,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color(0x19000000),
+                        blurRadius: 24,
+                        offset: Offset(0, 15),
+                      ),
+                    ],
+                  ),
+                  child: const Center(
+                    child: Text(
+                      "GABUNG TIM MERSI",
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ),
+                ),
               ),
             ],
           ),

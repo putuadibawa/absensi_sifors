@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:absensi_sifors/core.dart';
-import '../controller/splash_screen_controller.dart';
+//import '../controller/splash_screen_controller.dart';
 
 class SplashScreenView extends StatefulWidget {
   const SplashScreenView({Key? key}) : super(key: key);

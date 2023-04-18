@@ -1,4 +1,4 @@
-import 'package:absensi_sifors/module/login/view/login_view.dart';
+//import 'package:absensi_sifors/module/login/view/login_view.dart';
 import 'package:absensi_sifors/module/splash_screen/view/splash_screen_view.dart';
 import 'package:absensi_sifors/state_util.dart';
 import 'package:flutter/material.dart';
