@@ -47,7 +47,12 @@ class DashboardMahasiswaView extends StatefulWidget {
             ListTile(
               leading: const Icon(Icons.person),
               title: const Text("Profile"),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ProfileView()),
+                );
+              },
             ),
             ListTile(
               leading: const Icon(Icons.logout),

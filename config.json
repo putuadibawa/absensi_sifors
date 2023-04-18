@@ -3,6 +3,7 @@
     "modules": [
         "splash_screen",
         "login",
-        "dashboard_mahasiswa"
+        "dashboard_mahasiswa",
+        "profile"
     ]
 }
