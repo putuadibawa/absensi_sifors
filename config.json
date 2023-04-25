@@ -4,6 +4,9 @@
         "splash_screen",
         "login",
         "dashboard_mahasiswa",
-        "profile"
+        "profile",
+        "notification",
+        "kegiatan_terkini",
+        "detail_kegiatan"
     ]
 }

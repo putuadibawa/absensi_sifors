@@ -42,7 +42,13 @@ class DashboardMahasiswaView extends StatefulWidget {
             ListTile(
               leading: const Icon(Icons.notifications_active),
               title: const Text("Notifikasi"),
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const NotificationView()),
+                );
+              },
             ),
             ListTile(
               leading: const Icon(Icons.person),
@@ -107,7 +113,13 @@ class DashboardMahasiswaView extends StatefulWidget {
                 height: 20.0,
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const KegiatanTerkiniView()),
+                  );
+                },
                 child: Container(
                   padding: const EdgeInsets.all(0),
                   height: 80.0,
