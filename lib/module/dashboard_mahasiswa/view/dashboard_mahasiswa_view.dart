@@ -26,18 +26,6 @@ class DashboardMahasiswaView extends StatefulWidget {
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
-              otherAccountsPictures: [
-                // CircleAvatar(
-                //   backgroundColor: Colors.white,
-                //   backgroundImage: NetworkImage(
-                //       "https://randomuser.me/api/portraits/women/74.jpg"),
-                // ),
-                // CircleAvatar(
-                //   backgroundColor: Colors.white,
-                //   backgroundImage: NetworkImage(
-                //       "https://randomuser.me/api/portraits/men/47.jpg"),
-                // ),
-              ],
             ),
             ListTile(
               leading: const Icon(Icons.notifications_active),
@@ -151,7 +139,14 @@ class DashboardMahasiswaView extends StatefulWidget {
                 height: 20.0,
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const KegiatanmuView(),
+                    ),
+                  );
+                },
                 child: Container(
                   padding: const EdgeInsets.all(0),
                   height: 80.0,

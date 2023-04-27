@@ -10,14 +10,32 @@ class KegiatanmuView extends StatefulWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Kegiatanmu"),
+        title: const Text("KEGIATANMU"),
+        centerTitle: true,
         actions: const [],
       ),
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(10.0),
           child: Column(
-            children: const [],
+            children: [
+              Card(
+                child: ListTile(
+                  title: const Text("Sifors Sharing Session Batch 20"),
+                  trailing: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => const PresensiView(),
+                        ),
+                      );
+                    },
+                    child: const Text("PRESENSI"),
+                  ),
+                ),
+              ),
+            ],
           ),
         ),
       ),

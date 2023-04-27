@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:absensi_sifors/core.dart';
-import '../controller/detail_kegiatan_controller.dart';
-import '../widget/widget.dart';
+//import '../controller/detail_kegiatan_controller.dart';
+//import '../widget/widget.dart';
 
 class DetailKegiatanView extends StatefulWidget {
   const DetailKegiatanView({Key? key}) : super(key: key);

@@ -8,6 +8,8 @@
         "notification",
         "kegiatan_terkini",
         "detail_kegiatan",
-        "kegiatanmu"
+        "kegiatanmu",
+        "presensi",
+        "laporan_kehadiran"
     ]
 }
