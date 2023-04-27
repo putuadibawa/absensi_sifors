@@ -11,6 +11,7 @@ class KegiatanTerkiniView extends StatefulWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text("KEGIATAN TERKINI"),
+        centerTitle: true,
         actions: const [],
       ),
       body: SingleChildScrollView(
@@ -42,7 +43,6 @@ class KegiatanTerkiniView extends StatefulWidget {
         ),
       ),
     );
-    
   }
 
   @override

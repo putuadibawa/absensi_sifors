@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:absensi_sifors/state_util.dart';
-import '../view/detail_kegiatan_view.dart';
+import '../view/kegiatanmu_view.dart';
 
-class DetailKegiatanController extends State<DetailKegiatanView>
-    implements MvcController {
-  static late DetailKegiatanController instance;
-  late DetailKegiatanView view;
+class KegiatanmuController extends State<KegiatanmuView> implements MvcController {
+  static late KegiatanmuController instance;
+  late KegiatanmuView view;
 
   @override
   void initState() {
@@ -18,5 +17,4 @@ class DetailKegiatanController extends State<DetailKegiatanView>
 
   @override
   Widget build(BuildContext context) => widget.build(context, this);
-
 }

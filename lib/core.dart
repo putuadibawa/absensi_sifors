@@ -7,6 +7,9 @@ export 'package:absensi_sifors/module/dashboard_mahasiswa/controller/dashboard_m
 export 'package:absensi_sifors/module/dashboard_mahasiswa/view/dashboard_mahasiswa_view.dart';
 export 'package:absensi_sifors/module/detail_kegiatan/controller/detail_kegiatan_controller.dart';
 export 'package:absensi_sifors/module/detail_kegiatan/view/detail_kegiatan_view.dart';
+export 'package:absensi_sifors/module/detail_kegiatan/widget/widget.dart';
+export 'package:absensi_sifors/module/kegiatanmu/controller/kegiatanmu_controller.dart';
+export 'package:absensi_sifors/module/kegiatanmu/view/kegiatanmu_view.dart';
 export 'package:absensi_sifors/module/kegiatan_terkini/controller/kegiatan_terkini_controller.dart';
 export 'package:absensi_sifors/module/kegiatan_terkini/view/kegiatan_terkini_view.dart';
 export 'package:absensi_sifors/module/login/controller/login_controller.dart';
