@@ -178,7 +178,14 @@ class DashboardMahasiswaView extends StatefulWidget {
                 height: 20.0,
               ),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const LaporanKehadiranView(),
+                    ),
+                  );
+                },
                 child: Container(
                   padding: const EdgeInsets.all(0),
                   height: 80.0,
