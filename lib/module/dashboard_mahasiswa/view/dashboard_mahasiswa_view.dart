@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:absensi_sifors/core.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
+import '../widget/alert.dart';
 //import '../controller/dashboard_mahasiswa_controller.dart';
 
 class DashboardMahasiswaView extends StatefulWidget {
@@ -217,7 +219,7 @@ class DashboardMahasiswaView extends StatefulWidget {
                 height: 20.0,
               ),
               InkWell(
-                onTap: () {},
+                onTap: () => _onAlertButtonsPressed(context),
                 child: Container(
                   padding: const EdgeInsets.all(0),
                   height: 80.0,
@@ -254,4 +256,30 @@ class DashboardMahasiswaView extends StatefulWidget {
 
   @override
   State<DashboardMahasiswaView> createState() => DashboardMahasiswaController();
+}
+
+_onAlertButtonsPressed(context) {
+  Alert(
+    context: context,
+    type: AlertType.none,
+    desc: "Apakah anda yakin ingin bergabung menjadi Tim Mersi?",
+    buttons: [
+      DialogButton(
+        onPressed: () => Navigator.pop(context),
+        color: const Color.fromRGBO(0, 179, 134, 1.0),
+        child: const Text(
+          "BERGABUNG",
+          style: TextStyle(color: Colors.white, fontSize: 18),
+        ),
+      ),
+      DialogButton(
+        onPressed: () => Navigator.pop(context),
+        color: Colors.red,
+        child: const Text(
+          "BATAL",
+          style: TextStyle(color: Colors.white, fontSize: 18),
+        ),
+      )
+    ],
+  ).show();
 }

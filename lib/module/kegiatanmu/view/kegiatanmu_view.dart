@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:absensi_sifors/core.dart';
-import '../controller/kegiatanmu_controller.dart';
+//import '../controller/kegiatanmu_controller.dart';
 
 class KegiatanmuView extends StatefulWidget {
   const KegiatanmuView({Key? key}) : super(key: key);

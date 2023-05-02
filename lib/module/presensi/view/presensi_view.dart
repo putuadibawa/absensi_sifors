@@ -1,7 +1,7 @@
-import 'package:absensi_sifors/module/presensi/widget/widget.dart';
+//import 'package:absensi_sifors/module/presensi/widget/widget.dart';
 import 'package:flutter/material.dart';
 import 'package:absensi_sifors/core.dart';
-import '../controller/presensi_controller.dart';
+//import '../controller/presensi_controller.dart';
 
 class PresensiView extends StatefulWidget {
   const PresensiView({Key? key}) : super(key: key);

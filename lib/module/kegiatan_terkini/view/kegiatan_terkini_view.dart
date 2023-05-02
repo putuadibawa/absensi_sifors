@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:absensi_sifors/core.dart';
-import '../controller/kegiatan_terkini_controller.dart';
+//import '../controller/kegiatan_terkini_controller.dart';
 
 class KegiatanTerkiniView extends StatefulWidget {
   const KegiatanTerkiniView({Key? key}) : super(key: key);
