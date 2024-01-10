@@ -1,5 +1,4 @@
 {
-    "openai_key": "",
     "modules": [
         "splash_screen",
         "login",
@@ -10,6 +9,29 @@
         "detail_kegiatan",
         "kegiatanmu",
         "presensi",
-        "laporan_kehadiran"
+        "laporan_kehadiran",
+        "daftar_peserta",
+        "mersi/dashboard_mersi",
+        "mersi/kelola_kegiatan",
+        "mersi/detail_kegiatan_mersi",
+        "mersi/tambah_kegiatan",
+        "koorprodi/dashboard_koorprodi",
+        "koorprodi/kelola_tim_mersi",
+        "koorprodi/permohonan",
+        "koorprodi/informasi_mahasiswa",
+        "koorprodi/informasi_anggota",
+        "koorprodi/informasi_kegiatan",
+        "koorprodi/pengajuan_kegiatan",
+        "koorprodi/detail_pengajuan_kegiatan",
+        "koorprodi/detail_kegiatan_koorprodi"
+    ],
+    "module_directory_name": "module",
+    "experimental_mode": false,
+    "learning_mode": false,
+    "unfreezed": true,
+    "use_cubit": false,
+    "ignore_core_generator_for_directories": [
+        "lib/model",
+        "lib/models"
     ]
 }

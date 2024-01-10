@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
+import 'package:absensi_sifors/module/laporan_kehadiran/view/laporan_kehadiran_view.dart';
 import 'package:absensi_sifors/core.dart';
+import 'package:flutter/material.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
-import '../widget/alert.dart';
-//import '../controller/dashboard_mahasiswa_controller.dart';
+import '../controller/dashboard_mahasiswa_controller.dart';
 
 class DashboardMahasiswaView extends StatefulWidget {
   const DashboardMahasiswaView({Key? key}) : super(key: key);
@@ -36,7 +36,8 @@ class DashboardMahasiswaView extends StatefulWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => const NotificationView()),
+                    builder: (context) => const NotificationView(),
+                  ),
                 );
               },
             ),
@@ -84,9 +85,9 @@ class DashboardMahasiswaView extends StatefulWidget {
                       ),
                     ),
                   ),
-                  Column(
+                  const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       Text(
                         "Hi, Putu",
                         style: TextStyle(
@@ -219,7 +220,7 @@ class DashboardMahasiswaView extends StatefulWidget {
                 height: 20.0,
               ),
               InkWell(
-                onTap: () => _onAlertButtonsPressed(context),
+                onTap: () => _onBasicAlertPressed(context),
                 child: Container(
                   padding: const EdgeInsets.all(0),
                   height: 80.0,
@@ -282,4 +283,21 @@ _onAlertButtonsPressed(context) {
       )
     ],
   ).show();
+}
+
+_onBasicAlertPressed(context) {
+  Alert(
+      context: context,
+      title: "MOHON MENGUNGGU",
+      desc:
+          "Koorprodi Sistem Informasi akan melihat usulan anda, jika anda diterima akan ada pemberitahuan pada halaman notifikasi",
+      buttons: [
+        DialogButton(
+          child: const Text(
+            "OKE",
+            style: TextStyle(color: Colors.white, fontSize: 18),
+          ),
+          onPressed: () => Navigator.pop(context),
+        ),
+      ]).show();
 }

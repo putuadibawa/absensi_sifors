@@ -10,14 +10,15 @@ class NotificationView extends StatefulWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Notification"),
+        title: const Text("NOTOFIKASI"),
+        centerTitle: true,
         actions: const [],
       ),
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(10.0),
-          child: Column(
-            children: const [],
+          child: const Column(
+            children:  [],
           ),
         ),
       ),

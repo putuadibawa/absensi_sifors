@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
 import 'package:absensi_sifors/core.dart';
+import 'package:absensi_sifors/module/login/widget/widget_login.dart';
+import 'package:flutter/material.dart';
 //import 'package:google_sign_in/google_sign_in.dart';
 
 class LoginView extends StatefulWidget {
@@ -27,7 +28,7 @@ class LoginView extends StatefulWidget {
                 ),
               ),
               const SizedBox(
-                height: 70.0,
+                height: 20.0,
               ),
               const Center(
                 child: Text(
@@ -107,27 +108,29 @@ class LoginView extends StatefulWidget {
                       const SizedBox(
                         height: 10.0,
                       ),
-                      ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          shape: const StadiumBorder(),
-                        ),
-                        onPressed: () {
-                          Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) =>
-                                  const DashboardMahasiswaView(),
-                            ),
-                          );
-                        },
-                        child: const Text(
-                          "LOGIN",
-                          style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20.0,
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          btnLoginMahasiswa(context),
+                          const SizedBox(
+                            width: 5.0,
                           ),
-                        ),
+                          btnLoginMersi(context),
+                          const SizedBox(
+                            width: 5.0,
+                          ),
+                          btnLoginKoorprodi(context),
+                        ],
                       ),
+
+                      // const SizedBox(
+                      //   height: 10.0,
+                      // ),
+                      //btnLoginMersi(context),
+                      const SizedBox(
+                        height: 10.0,
+                      ),
+                      // btnLoginKoorprodi(context),
                       const SizedBox(
                         height: 10.0,
                       ),
